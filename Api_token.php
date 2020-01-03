@@ -1,5 +1,5 @@
 <?php
-
+// Obtener un usuario
 function GetCustomer(){
     $curl = curl_init();
     // Customer 1018
@@ -23,7 +23,7 @@ function GetCustomer(){
     curl_close($curl);
     echo $response;
 }
-
+// Registrar un usuario
 function PostCustomer(){
     $curl = curl_init();
 
@@ -58,7 +58,7 @@ function PostCustomer(){
     curl_close($curl);
     echo $response;
 }
-
+// Realizar una compra
 function Purchase(){
     $curl = curl_init();
 
@@ -96,7 +96,7 @@ function Purchase(){
     curl_close($curl);
     echo $response;
 }
-
+// Obtener compra
 function GetPurchase(){
     $curl = curl_init();
     // Customer 1018
@@ -120,7 +120,31 @@ function GetPurchase(){
     curl_close($curl);
     echo $response;
 }
+// Obtener lista de compra
+function GetPurchaseList(){
+    $curl = curl_init();
+    // Customer 1018
+    curl_setopt_array($curl, array(
+    CURLOPT_URL => "https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase?CustomerID=100&From=20180525&To=20191225&Authorize=false8",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "GET",
+    CURLOPT_HTTPHEADER => array(
+            "Content-Type: application/json",
+            "Authorization: Basic on3smurlSFA-_xT9IRGDv6v17bAY8Ri6acwsmjpjIojkNmByKuUJkA__"
+        ),
+    ));
 
+    $response = curl_exec($curl);
+
+    curl_close($curl);
+    echo $response;
+}
+// Activar medio de pago
 function Activation(){
     $curl = curl_init();
 
@@ -148,7 +172,7 @@ function Activation(){
     curl_close($curl);
     echo $response;
 }
-
+// Actualizar medio de pago
 function PaymentProfileUpdate(){
     $curl = curl_init();
 
@@ -179,7 +203,7 @@ function PaymentProfileUpdate(){
     curl_close($curl);
     echo $response;
 }
-
+// Eliminar Medio de pago
 function PaymentProfileDelete(){
     $curl = curl_init();
 
@@ -206,7 +230,7 @@ function PaymentProfileDelete(){
     curl_close($curl);
     echo $response;
 }
-
+// Anular compra
 function Refund(){
     $curl = curl_init();
 
