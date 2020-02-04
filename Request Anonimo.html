@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Document</title>
+    <meta content="JavaScript" name="vs_defaultClientScript" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <script type="text/javascript"
+        src="https://lab.cardnet.com.do/servicios/tokens/v1/Scripts/PWCheckout.js?key=mfH9CqiAFjFQh_gQR_1TQG_I56ONV7HQ">
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <form id="form_1">
+            <input name="PWToken" type="hidden" id="PWToken" />
+            <input value="Checkout" type="button" id="btnCheckout" />
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById("btnCheckout").addEventListener("click", function () {
+            PWCheckout.Bind("tokenCreated", OnTokenReceived);
+            PWCheckout.SetProperties({
+                "name": "CardNet",
+                "email": "",
+                "image": "https://www.cardnet.com.do/capp/images/logo_nuevo_x_2.png",
+                "button_label": "Pagar #monto#",
+                "description": "Consorcio de Tarjetas Dominicanas",
+                "currency": "$DOP",
+                "lang": "ESP",
+                "form_id": "form_1",
+                "amount": "1",
+                "checkout_card": 1,
+                "autoSubmit": "false",
+                "empty": "false"
+            });
+
+
+            function OnTokenReceived(token) {
+                console.log(token.TokenId);
+                alert(token.TokenId);
+                setTimeout(function () {}, 2000);
+            }
+        });
+
+        PWCheckout.AddActionButton("btnCheckout");
+    </script>
+
+</body>
+
+</html>
