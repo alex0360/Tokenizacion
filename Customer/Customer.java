@@ -20,7 +20,7 @@ import okhttp3.Response;
  */
 public class Customer {
 
-    public static String PostCustomerOk() throws IOException {
+    public static String PostCustomer() throws IOException {
 
         OkHttpClient client = new OkHttpClient()
                 .newBuilder()
@@ -47,8 +47,7 @@ public class Customer {
         }
     }
 
-
-    public static String GetCustomerOk() throws IOException {
+    public static String GetCustomer() throws IOException {
 
         OkHttpClient client = new OkHttpClient()
                 .newBuilder()
@@ -65,7 +64,7 @@ public class Customer {
         }
     }
     
-    public static String UpdateCustomerOk() throws IOException {
+    public static String UpdateCustomer() throws IOException {
 
         OkHttpClient client = new OkHttpClient()
                 .newBuilder()
