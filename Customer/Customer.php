@@ -82,7 +82,7 @@ function UpdateCustomer(){
                             \"DocNumber\": \"00114918123\",\n
                             \"PhoneNumber\": \"8096042082\" ,\n
                             \"Enable\": true  
-                            }"
+                            }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
             "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
