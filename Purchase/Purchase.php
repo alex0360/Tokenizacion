@@ -28,7 +28,7 @@ function Purchase(){
                         }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic on3smurlSFA-_xT9IRGDv6v17bAY8Ri6acwsmjpjIojkNmByKuUJkA__"
+            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
     ),
     ));
 
