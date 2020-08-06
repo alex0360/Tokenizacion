@@ -3,7 +3,6 @@
     public class Customer
     {
         //public string PrivateAccountKey ="9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__";
-        //public string PrivateAccountKey ="on3smurlSFA-_xT9IRGDv6v17bAY8Ri6acwsmjpjIojkNmByKuUJkA__";
         public static string GetCustomer()
         {
             //1047
