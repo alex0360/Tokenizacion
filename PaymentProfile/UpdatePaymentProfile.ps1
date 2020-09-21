@@ -1,6 +1,6 @@
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add("Content-Type", "application/json")
-$headers.Add("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+$headers.Add("Authorization", "Basic PrivateAccountKey")
 
 $body = "{
     `n  `"PaymentProfileId`":`"1914`",
