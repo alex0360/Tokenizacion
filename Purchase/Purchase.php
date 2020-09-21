@@ -19,7 +19,7 @@ function Purchase(){
                             \"Tip\": 000,\n
                             \"Currency\": \"DOP\",\n
                             \"Capture\": true,\n
-                            \"CustomerIP\": \"10.100.81.211\",\n
+                            \"CustomerIP\": \"10.0.0.2\",\n
                             \"DataDo\": {
                                 \"Tax\": 000,\n
                                 \"Invoice\": \"000001\",\n
@@ -28,7 +28,7 @@ function Purchase(){
                         }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
     ),
     ));
 
@@ -52,7 +52,7 @@ function GetPurchase(){
     CURLOPT_CUSTOMREQUEST => "GET",
     CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
 
@@ -76,7 +76,7 @@ function GetPurchaseList(){
     CURLOPT_CUSTOMREQUEST => "GET",
     CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
 
@@ -100,7 +100,7 @@ function RefundPurchase(){
         CURLOPT_CUSTOMREQUEST => "POST",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
     ),
     ));
 
