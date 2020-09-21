@@ -9,7 +9,7 @@ $body = "{
     `n  `"Tip`":`"000`",
     `n  `"Currency`":`"DOP`",
     `n  `"Capture`": true,
-    `n  `"CustomerIP`":`"10.100.81.211`",
+    `n  `"CustomerIP`":`"10.0.0.2",
     `n  `"DataDo`": {`"Tax`":000, `"Invoice`":`"000001`"}
     `n  }"
 $response = Invoke-RestMethod -Uri "https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase"  -Method POST -Headers $headers -Body $body
