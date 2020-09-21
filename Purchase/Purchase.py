@@ -4,7 +4,7 @@ def PostPurchase():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     params = { "TrxToken": "CT__zY7fKlVa0eSg7RUCF_xdtSfywmvsfGn1xtpKnGKuR3M_",
@@ -13,7 +13,7 @@ def PostPurchase():
                             "Tip": 000,
                             "Currency": "DOP",
                             "Capture": True,
-                            "CustomerIP": "10.100.81.211",
+                            "CustomerIP": "100.00.0.2",
                             "DataDo": {"Tax": 000, "Invoice": "000001"}
               }
 
@@ -24,7 +24,7 @@ def GetPurchase():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase/12511"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     response = requests.get(url, headers=headers)
@@ -34,7 +34,7 @@ def PurchaseRefund():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase/12511/refund"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     params = {}
@@ -46,7 +46,7 @@ def PurchaseList():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase?CustomerID=100&From=20180525&To=20191225&Authorize=false"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     response = requests.get(url, headers=headers)
