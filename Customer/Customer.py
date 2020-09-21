@@ -5,7 +5,7 @@ def GetCustomer():
 
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     response = requests.get(url, headers=headers)
@@ -16,7 +16,7 @@ def PostCustomer():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     params = {"Email": "edelossantos24@cardnet.com.do",
@@ -36,7 +36,7 @@ def UpdateCustomer():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/1047/update"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     params = {"CustomerID": 1047,
