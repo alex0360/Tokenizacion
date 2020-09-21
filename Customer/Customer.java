@@ -40,7 +40,7 @@ public class Customer {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer")
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
@@ -56,7 +56,7 @@ public class Customer {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/1047")
                 .method("GET", null)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
 
         try (Response response = client.newCall(request).execute()) {
@@ -84,7 +84,7 @@ public class Customer {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/1047/update")
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
