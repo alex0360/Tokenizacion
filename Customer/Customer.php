@@ -15,7 +15,7 @@ function GetCustomer(){
     CURLOPT_CUSTOMREQUEST => "GET",
     CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
 
@@ -50,7 +50,7 @@ function PostCustomer(){
                         }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
 
@@ -85,7 +85,7 @@ function UpdateCustomer(){
                             }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
     $response = curl_exec($curl);
