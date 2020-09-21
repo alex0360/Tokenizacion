@@ -2,7 +2,7 @@
 {
     public class Customer
     {
-        //public string PrivateAccountKey ="9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__";
+        //public string PrivateAccountKey ="PrivateKey";
         public static string GetCustomer()
         {
             //1047
@@ -14,7 +14,7 @@
             RestSharp.RestRequest restRequest = new RestSharp.RestRequest(RestSharp.Method.GET);
             var request = restRequest;
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__");
+            request.AddHeader("Authorization", "Basic PrivateAccountKey");
 
             RestSharp.IRestResponse response = client.Execute(request);
             return response.Content;
@@ -29,7 +29,7 @@
             var request = new RestSharp.RestRequest(RestSharp.Method.POST);
 
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__");
+            request.AddHeader("Authorization", "Basic PrivateAccountKey");
 
             request.AddParameter("application/json", "{" +
                         "\"Email\": \"ds@gmail.com\",\n" +
@@ -55,7 +55,7 @@
             var request = new RestSharp.RestRequest(RestSharp.Method.POST);
 
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__");
+            request.AddHeader("Authorization", "Basic PrivateAccountKey");
 
             request.AddParameter("application/json", "{" +
                         "\"CustomerID\": 1047,\n" +
