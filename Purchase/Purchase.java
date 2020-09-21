@@ -32,14 +32,14 @@ public class Purchase {
                 + "\"Tip\": 000,\n"
                 + "\"Currency\": \"DOP\",\n"
                 + "\"Capture\": true,\n"
-                + "\"CustomerIP\": \"10.100.81.211\",\n"
+                + "\"CustomerIP\": \"10.0.0.2\",\n"
                 + "\"DataDo\": { \"Tax\": 000,\n \"Invoice\": \"000001\",\n }"
                 + "}");
         Request request = new Request.Builder()
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase")
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
@@ -54,7 +54,7 @@ public class Purchase {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase/12511")
                 .method("GET", null)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
 
         try (Response response = client.newCall(request).execute()) {
@@ -70,7 +70,7 @@ public class Purchase {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase?CustomerID=100&From=20180525&To=20191225&Authorize=false")
                 .method("GET", null)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
 
         try (Response response = client.newCall(request).execute()) {
@@ -88,7 +88,7 @@ public class Purchase {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase/12511/refund")
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
