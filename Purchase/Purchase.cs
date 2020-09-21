@@ -2,15 +2,14 @@
 {
     public class Purchase
     {
-        //public string PrivateAccountKey ="9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__";
-        //public string PrivateAccountKey ="on3smurlSFA-_xT9IRGDv6v17bAY8Ri6acwsmjpjIojkNmByKuUJkA__";
+        //public string PrivateAccountKey ="PrivateAccountKey";
         public static string PostPurchase()
         {
             var client = new RestSharp.RestClient("https://lab.cardnet.com.do/servicios/tokens/v1/api/Purchase"){Timeout = -1};
             var request = new RestSharp.RestRequest(RestSharp.Method.POST);
 
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__");
+            request.AddHeader("Authorization", "Basic PrivateAccountKey");
 
             request.AddParameter("application/json", "{" +
                         "\"TrxToken\": \"CT__6NBt_OO5gfCg7RUCF_xdtRuaohj8YOAjLqkyXVed23g_\",\n" +
@@ -35,7 +34,7 @@
             var request = new RestSharp.RestRequest(RestSharp.Method.GET);
 
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__");
+            request.AddHeader("Authorization", "Basic PrivateAccountKey");
 
             RestSharp.IRestResponse response = client.Execute(request);
             return response.Content;
@@ -48,7 +47,7 @@
             var request = new RestSharp.RestRequest(RestSharp.Method.GET);
 
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__");
+            request.AddHeader("Authorization", "Basic PrivateAccountKey");
 
             RestSharp.IRestResponse response = client.Execute(request);
             return response.Content;
@@ -62,7 +61,7 @@
             var request = new RestSharp.RestRequest(RestSharp.Method.POST);
 
             request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__");
+            request.AddHeader("Authorization", "Basic PrivateAccountKey");
 
             RestSharp.IRestResponse response = client.Execute(request);
             return response.Content;
