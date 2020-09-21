@@ -32,7 +32,7 @@ public class Purchase {
                 + "\"Tip\": 000,\n"
                 + "\"Currency\": \"DOP\",\n"
                 + "\"Capture\": true,\n"
-                + "\"CustomerIP\": \"10.0.0.2\",\n"
+                + "\"CustomerIP\": \"100.0.0.2\",\n"
                 + "\"DataDo\": { \"Tax\": 000,\n \"Invoice\": \"000001\",\n }"
                 + "}");
         Request request = new Request.Builder()
