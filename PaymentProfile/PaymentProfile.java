@@ -30,7 +30,7 @@ public class PaymentProfile {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/62057/activate")
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
@@ -50,7 +50,7 @@ public class PaymentProfile {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/100/PaymentProfileUpdate")
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
@@ -66,7 +66,7 @@ public class PaymentProfile {
                 .url("https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/100/PaymentProfileDelete")
                 .method("POST", body)
                 .addHeader("Content-Type", "application/json")
-                .addHeader("Authorization", "Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__")
+                .addHeader("Authorization", "Basic PrivateAccountKey")
                 .build();
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
