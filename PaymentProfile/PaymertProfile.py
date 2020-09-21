@@ -4,7 +4,7 @@ def PaymentProfileActivation():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/1047/activate"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     params = {"Token": "CT__zY7fKlVa0eSg7RUCF_xdtSfywmvsfGn1xtpKnGKuR3M_",
@@ -17,7 +17,7 @@ def PaymentProfileUpdate():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/1047/PaymentProfileUpdate"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     params = {"PaymentProfileId": "1914",
@@ -31,7 +31,7 @@ def PaymentProfileDelete():
     url = "https://lab.cardnet.com.do/servicios/tokens/v1/api/Customer/1047/PaymentProfileDelete"
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': 'Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__'
+        'Authorization': 'Basic PrivateAccountKey'
     }
 
     params = {"PaymentProfileId": "1914"}
