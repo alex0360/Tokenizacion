@@ -18,7 +18,7 @@
                         "\"Tip\": 000,\n" +
                         "\"Currency\": \"DOP\",\n" +
                         "\"Capture\": true,\n" +
-                        "\"CustomerIP\": \"10.100.81.211\",\n" +
+                        "\"CustomerIP\": \"10.0.0.2\",\n" +
                         "\"DataDo\": { \"Tax\": 000,\n \"Invoice\": \"000001\",\n }" +
                         "}", RestSharp.ParameterType.RequestBody);
 
