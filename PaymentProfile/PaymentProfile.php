@@ -18,7 +18,7 @@ function Activation(){
                         }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
 
@@ -49,7 +49,7 @@ function PaymentProfileUpdate(){
                         }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
 
@@ -76,7 +76,7 @@ function PaymentProfileDelete(){
                         }",
         CURLOPT_HTTPHEADER => array(
             "Content-Type: application/json",
-            "Authorization: Basic 9kYH2uY5zoTD-WBMEoc0KNRQYrC7crPRJ7zPegg3suXguw_8L-rZDQ__"
+            "Authorization: Basic PrivateAccountKey"
         ),
     ));
 
